@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch on Videy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+}
+
+.player{
+    width:820px;
+    height:460px;
+    background:#433b7a;
+    border-radius:22px;
+    position:relative;
+    box-shadow:0 25px 60px rgba(0,0,0,0.35);
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:none;
+    cursor:pointer;
+    background:linear-gradient(135deg,#ff5f3a,#ff0066);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.3s;
+    box-shadow:0 0 30px rgba(255,0,100,0.5);
+}
+
+.play-btn:hover{
+    transform:translate(-50%,-50%) scale(1.08);
+}
+
+.play-btn::before{
+    content:'';
+    width:0;
+    height:0;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:24px solid white;
+    margin-left:5px;
+}
+
+.play-ring{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.04);
+}
+</style>
+</head>
+<body>
+
+<div class="player">
+    <div class="play-ring"></div>
+
+    <!-- TOMBOL IKLAN -->
+    <button class="play-btn" onclick="openAds()"></button>
+</div>
+
+<script>
+function openAds(){
+
+    // LINK IKLAN ADSTERRA
+    window.location.href = "https://acquitfamouscavity.com/xnjmgc7q7?key=df968b543d1a81601cbe0c218200ae0c";
+
+}
+</script>
+
+</body>
+</html>
